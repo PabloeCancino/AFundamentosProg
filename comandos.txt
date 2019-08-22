@@ -1,0 +1,15 @@
+Servicio  Git (Controlador de Versiones)
+https://github.com
+
+Comandos Principales para Git
+clonar repositorio
+c:\\>git clone "url"
+Agregar archivos al repositorio local
+c:\\>git add -A "nombreArchivo"
+Sincronizar cambios con repositorio local
+c:\\>git commit -a -m "Mesaje"
+Sincronizar(Actualizar) contenido de Repositorio Remoto a Repositorio Local
+c:\\>git pull
+Subir cambios de Repositorio Local al Repositorio Remoto
+c:\\>git push
+
