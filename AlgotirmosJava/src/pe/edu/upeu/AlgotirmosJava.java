@@ -108,6 +108,32 @@ public class AlgotirmosJava {
     public static void calcularAreaFigura(){
         System.out.println("Elija el area de que figura desea Calcular");
         System.out.println("T-->Triangulo\nC-->cuadrado\nR-->Rombo");
+        String figura=cs.nextLine();
+        
+        do{
+        switch(figura){
+        case "T":{
+                System.out.println("Ingrese la base del Triangulo:");
+                int base=cs.nextInt();
+                System.out.println("Ingrese la altura del Triangulo:");
+                int h=cs.nextInt();
+                int area=(base*h)/2;
+                System.out.println("El area del triangulo es:"+area);
+                double resultado=Math.pow(5, 2);
+                System.out.println("Potencia:"+resultado);
+                }break;
+        case "C":{ System.out.println("Favor Implementar el "
+                + " Algoritmo en Casa para el Cuadrado"); }break;
+        case "R":{ System.out.println("Favor Implementar el "
+                + " Algoritmo en Casa para el Rombo"); }break;                
+        default:{System.out.println("la opcion no existe");}
+        } 
+        System.out.println("Elija el area de que figura desea Calcular");
+        System.out.println("T-->Triangulo\nC-->cuadrado\nR-->Rombo");        
+        figura=cs.nextLine();
+        }while(!figura.equals("X"));
+        
+
     }
     
     public static void main(String[] args) {               
@@ -123,7 +149,7 @@ public class AlgotirmosJava {
             case "A1":{ cantidadPagoLapices(); }break;
             case "A2":{ fabricaPantalonesTipoModelo(); }break;
             case "A3":{ cobroPorLlamada(); }break;
-            case "A4":{  }break;
+            case "A4":{ calcularAreaFigura(); }break;
             default:{ System.out.println("Opcion no valida"); }
         }
         
