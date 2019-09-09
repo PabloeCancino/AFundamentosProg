@@ -136,6 +136,21 @@ public class AlgotirmosJava {
 
     }
     
+    public static void tablaMultiplicar1a9(){
+    //Tabla de Multiplicar con el While
+    int tablaInit=1;
+    int tablaInit2=1;    
+    while(tablaInit<=9){
+        while (tablaInit2<=9) {            
+            System.out.println(tablaInit+"x"+tablaInit2+"="+tablaInit*tablaInit2);
+            tablaInit2++;
+        }
+        System.out.println("\n");
+        tablaInit++;
+        tablaInit2=1;
+    }    
+    }
+    
     public static void main(String[] args) {               
         //Ejemplo de Estructura Condicional Multiple
         //declarando variable nombreAlgoritmo
@@ -149,7 +164,7 @@ public class AlgotirmosJava {
             case "A1":{ cantidadPagoLapices(); }break;
             case "A2":{ fabricaPantalonesTipoModelo(); }break;
             case "A3":{ cobroPorLlamada(); }break;
-            case "A4":{ calcularAreaFigura(); }break;
+            case "A4":{ calcularAreaFigura(); }break;            
             default:{ System.out.println("Opcion no valida"); }
         }
         
