@@ -105,6 +105,10 @@ public class AlgotirmosJava {
     
     }
     
+    public static void calcularAreaFigura(){
+        System.out.println("Elija el area de que figura desea Calcular");
+        System.out.println("T-->Triangulo\nC-->cuadrado\nR-->Rombo");
+    }
     
     public static void main(String[] args) {               
         //Ejemplo de Estructura Condicional Multiple

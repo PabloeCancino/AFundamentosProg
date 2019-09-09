@@ -21,8 +21,7 @@ is divided into following sections:
 
         -->
 <project xmlns:if="ant:if" xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc" xmlns:unless="ant:unless" basedir=".." default="default" name="AlgotirmosJava-impl">  
-  <property name="kotlin.lib" value="C:\DATOS 2019\kotlinc\lib"/>  
-  <typedef classpath="${kotlin.lib}/kotlin-ant.jar" resource="org/jetbrains/kotlin/ant/antlib.xml"/>  
+  
   <fail message="Please build using Ant 1.8.0 or higher."> 
     <condition> 
       <not> 
@@ -415,7 +414,7 @@ is divided into following sections:
               <include name="*"/> 
             </dirset> 
           </src>  
-          <withKotlin/>
+          
           <classpath> 
             <path path="@{classpath}"/> 
           </classpath>  
