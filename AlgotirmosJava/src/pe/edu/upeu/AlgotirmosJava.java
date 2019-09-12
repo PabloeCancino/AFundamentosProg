@@ -138,15 +138,15 @@ public class AlgotirmosJava {
     
     public static void tablaMultiplicar1a9(){
     //Tabla de Multiplicar con el While
-    int tablaInit=1;
-    int tablaInit2=1;    
+    int tablaInit=1;//Acumulador
+    int tablaInit2=1;    //Acumulador
     while(tablaInit<=9){
         while (tablaInit2<=9) {            
             System.out.println(tablaInit+"x"+tablaInit2+"="+tablaInit*tablaInit2);
-            tablaInit2++;
+            tablaInit2++;//Contador
         }
         System.out.println("\n");
-        tablaInit++;
+        tablaInit++;//Contador
         tablaInit2=1;
     }    
     }
