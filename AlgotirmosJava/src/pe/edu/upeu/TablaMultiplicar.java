@@ -33,11 +33,12 @@ public class TablaMultiplicar {
     }
     
     public static void main(String[] args) {
-        int opcion=1;
+        int opcion=0;
         do{
             switch(opcion){
             case 1:{tMultiplicar();}break;
             case 2:{determinarCantidadTipoNumeros();}break;
+            default:{System.out.println("No existe la opcion eligida!!");}
             }
             System.out.println("Seleccion el algoritmo que desea probar:");
             opcion=cs.nextInt();
