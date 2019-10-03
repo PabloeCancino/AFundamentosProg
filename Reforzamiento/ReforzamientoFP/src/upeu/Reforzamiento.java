@@ -36,8 +36,7 @@ public class Reforzamiento {
             }
         }
         return resultSuma;
-    }
-    
+    }    
     public static void main(String[] args) {
         Reforzamiento r=new Reforzamiento();
         for(int j=1; j<10; j++){
@@ -46,7 +45,6 @@ public class Reforzamiento {
         LeerTeclado lt=new LeerTeclado();
         int numInit=lt.leer(0, "Ingrese el primer numero:");
         int numFinal=lt.leer(0, "Ingrese el siguiente numero:");      
-        System.out.println("El resultado es:"+r.sumaEntre2Numeros(numInit, numFinal));
-        
+        System.out.println("El resultado es:"+r.sumaEntre2Numeros(numInit, numFinal));        
     }
 }
