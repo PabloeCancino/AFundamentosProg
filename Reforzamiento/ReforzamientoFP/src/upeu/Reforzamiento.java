@@ -5,30 +5,48 @@
  */
 package upeu;
 
+import java.math.BigInteger;
+
 /**
  *
  * @author Laboratorio 7
  */
 public class Reforzamiento {
-    
-    int factorial(int numero){
-    int resultado=1;
+    /*
+        System.out.println("byte\t" + Byte.MIN_VALUE + "\t" + Byte.MAX_VALUE);
+        System.out.println("short\t" + Short.MIN_VALUE + "\t" + Short.MAX_VALUE);
+        System.out.println("int\t" + Integer.MIN_VALUE + "\t" + Integer.MAX_VALUE);
+        System.out.println("long\t" + Long.MIN_VALUE + "\t" + Long.MAX_VALUE);
+        System.out.println("float\t" + Float.MIN_VALUE + "\t" + Float.MAX_VALUE);
+        System.out.println("double\t" + Double.MIN_VALUE + "\t" + Double.MAX_VALUE);    
+    */
+    BigInteger factorial(int numero){
+    BigInteger resultado=BigInteger.valueOf(numero);
     for (int i = 1; i <= numero; i++) {
-        resultado=resultado*i;
+        resultado=resultado.multiply(BigInteger.valueOf(i));
     }  
     return resultado;
     }
     
+    int sumaEntre2Numeros(int numInit, int numFinal){
+        int resultSuma=0;
+        for (int i = numInit; i <= numFinal; i++) {
+            if(i%2==0){
+            resultSuma=resultSuma+i;
+            }
+        }
+        return resultSuma;
+    }
+    
     public static void main(String[] args) {
         Reforzamiento r=new Reforzamiento();
-        System.out.println("Factorial de 2"+r.factorial(2));
-        System.out.println("Factorial de 3"+r.factorial(3));
-        System.out.println("Factorial de 5"+r.factorial(5));
-        System.out.println("Factorial de 9"+r.factorial(9));
-        System.out.println("Factorial de 10"+r.factorial(10));
-        System.out.println("Factorial de 15"+r.factorial(15));
-        System.out.println("Factorial de 18"+r.factorial(18));
-        System.out.println("Factorial de 20"+r.factorial(20));
-        System.out.println("Factorial de 33"+r.factorial(33));
+        for(int j=1; j<10; j++){
+        System.out.println("Factorial de "+j+":"+String.valueOf(r.factorial(j)));
+        }   
+        LeerTeclado lt=new LeerTeclado();
+        int numInit=lt.leer(0, "Ingrese el primer numero:");
+        int numFinal=lt.leer(0, "Ingrese el siguiente numero:");      
+        System.out.println("El resultado es:"+r.sumaEntre2Numeros(numInit, numFinal));
+        
     }
 }
