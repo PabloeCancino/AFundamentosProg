@@ -25,14 +25,39 @@ public class CalcularPotencia {
         return resultado; //es el Retorno de tipo double
     }    
     
+    public int factorial(int numero){
+        int resultado=1;
+        for (int i = 1; i <= numero; i++) {
+            resultado=resultado*i;
+        }
+        return resultado;
+    }
+    
+    
     public static void main(String[] args) {        
         LeerTeclado lt=new LeerTeclado();
-        double base=lt.leer(0.0, "Numero Base:");
-        int elebadoa=lt.leer(0, "Numero Elebado a:");
-        System.out.println(potencia(base, elebadoa));
-        //Creando un Objeto con el mismo nombre de la clase
-        CalcularPotencia cp=new CalcularPotencia();//cp es un Objeto        
-        System.out.println(cp.potenciaTipoDos(base, elebadoa));
+        double base=0;int elebadoa=0;                
+        CalcularPotencia cp=new CalcularPotencia();//cp es un Objeto                
+        int opcion=lt.leer(0, "Seleccione el algoritmo que desea probar:");
+        
+        do{ switch(opcion){
+                case 1:{ 
+                    base=lt.leer(0.0, "Numero Base:");
+                    elebadoa=lt.leer(0, "Numero Elebado a:");
+                    System.out.println(potencia(base, elebadoa)); } break;
+                case 2:{ 
+                    base=lt.leer(0.0, "Numero Base:");
+                    elebadoa=lt.leer(0, "Numero Elebado a:");                    
+                    System.out.println(cp.potenciaTipoDos(base, elebadoa));} break;
+                    
+                case 3:{                     
+                    int numero=lt.leer(0, "Ingrese el factorial del numero que desea calcular:");
+                    System.out.println("El Factorial "+numero+" es:" + cp.factorial(numero));                    
+                    } break;
+                default:System.out.println("Opcion no valida");
+            }
+            opcion=lt.leer(0, "Eligir nuevamente el algoritmo que desea probar:");
+        }while(opcion!=0);        
         }
    
 }
