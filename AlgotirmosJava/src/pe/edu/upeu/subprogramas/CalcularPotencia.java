@@ -33,12 +33,22 @@ public class CalcularPotencia {
         return resultado;
     }
     
-    
+    public void factorialEntre2Numeros(int valInicial, int valFinal){
+        CalcularPotencia cp=new CalcularPotencia();
+        for (int i = valInicial; i <= valFinal; i++) {
+            System.out.println("El Factorial de "+i+" es:"+cp.factorial(i));
+        }
+    }    
     public static void main(String[] args) {        
         LeerTeclado lt=new LeerTeclado();
         double base=0;int elebadoa=0;                
-        CalcularPotencia cp=new CalcularPotencia();//cp es un Objeto                
-        int opcion=lt.leer(0, "Seleccione el algoritmo que desea probar:");
+        CalcularPotencia cp=new CalcularPotencia();//cp es un Objeto 
+        int opcion=0;        
+        try {
+            opcion=lt.leer(0, "Seleccione el algoritmo que desea probar:");
+        } catch (Exception e) {
+            System.out.println("Error en el Ingreso de datos"+e.getMessage());
+        }
         
         do{ switch(opcion){
                 case 1:{ 
@@ -54,6 +64,11 @@ public class CalcularPotencia {
                     int numero=lt.leer(0, "Ingrese el factorial del numero que desea calcular:");
                     System.out.println("El Factorial "+numero+" es:" + cp.factorial(numero));                    
                     } break;
+                case 4:{
+                cp.factorialEntre2Numeros(
+                lt.leer(0, "Ingrese Valor Inicial:"), 
+                lt.leer(0, "Ingrese Valor Final:"));
+                }break;
                 default:System.out.println("Opcion no valida");
             }
             opcion=lt.leer(0, "Eligir nuevamente el algoritmo que desea probar:");
