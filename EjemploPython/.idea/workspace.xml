@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14c0f900-8ea3-4828-9401-d6a655a5ed86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgotirmosJava/src/pe/edu/upeu/TablaMultiplicar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgotirmosJava/src/pe/edu/upeu/TablaMultiplicar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EjemploPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EjemploPython.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgotirmosJava/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgotirmosJava/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reforzamiento/ReforzamientoFP/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reforzamiento/ReforzamientoFP/nbproject/private/private.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +23,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="165" />
-    <option name="y" value="322" />
-    <option name="width" value="1369" />
-    <option name="height" value="1100" />
   </component>
   <component name="ProjectId" id="1Qk4sW2Zh0PFpBPzYdaDiBfK36d" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -140,7 +134,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
