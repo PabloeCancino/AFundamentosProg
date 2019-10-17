@@ -27,8 +27,7 @@ public class ArreglosJava {
             System.out.println("");
             System.out.println(x[i]);
         }
-    }
-    
+    }    
     public static void main(String[] args) {
         ArreglosJava aj=new ArreglosJava();
         aj.rellenarVector(5);
