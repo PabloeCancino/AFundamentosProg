@@ -61,7 +61,47 @@ public class RepasoInicio {
         num1%=num2; System.out.println("Resto: "+(double)(num1));
         
         //Operadores de Comparacion/Logicos/Estructuras de Control
+        //numerico
         if(num1==num2){}  if(num1==num2){}
+        if(num1>=num2){}  if(num1<=num2){}
+        if(num1>num2){}  if(num1<num2){}
+        //no numerico
+        if(v==false){}  if(v){} if(v!=false){}  if(!v){} 
+        if(valor=='R'){} if(valor!='R'){} 
+        if(nombre.equals("David")){} if(!nombre.equals("David")){} 
+        //operadores Logicos Y/O     /not (Implicito)
+        if(num1==num2 && valor=='*' && nombre.equals("Dario")){ }
+        if(num1==num2 || (valor=='*' && nombre.equals("Dario"))){ }
+        if(num1==num2 || (valor=='*' && nombre.equals("Dario"))){ }
+        //Estructuras de control  Secuenciales/Condicionales/Repetitivas
+        //Condicionales Simples
+        if(valor=='R'){ }else{ }
+        if(valor=='R'){ }else if(valor=='D'){  }else{  }
+        if(num1>0){ if(num1%2==0){ }else{ }}else{}
+        //condicionales Multiples
+        switch(num1){ case 1:{} break; case 2:{}break; default:{ } }
+        switch(valor){ case 'R':{} break; case ' ':{}break; default:{ } }
+        switch(nombre){ case "dario":{} break; case "A":{}break; default:{ } }
+        switch(nombre){ case "dario":{ if(nombre.equals("Juan")){} } break; 
+        case "A":{}break; default:{ } }
+        //Repetitivas   for/while/do while
+        //For
+        for (int i = 0; i < 10; i++) {  }
+        //While
+        while(v){ }  while(v==true || v==false){ }
+        while(num1>=1){ num1=0;}  while(num1==0 && num1>0){ }
+        while(valor==' '){ }  while(valor!=' ' && num1>0){ }
+        while(nombre.equals("Juan")){ }  while(!nombre.equals("Juan") && num1>0){ }
+        //do while
+        do{
+        
+        }while(v!=true);
+        
+        do{
+        
+        }while(valor==' ' && num1>0 || !nombre.equals("David"));
+        
+        
         
     }
     
