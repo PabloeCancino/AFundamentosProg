@@ -32,17 +32,21 @@ public class ArreglosJava {
         ArreglosJava aj=new ArreglosJava();
         aj.rellenarVector(5);
         
-        /*//definir arreglo  (Vector)
-        int[] vector={5,2,3,4};                
-        System.out.println("Tamaño del Vector:"+vector.length);
-        vector[1]=6;//Cambiando el valor de un vector en la posicion 1
-        System.out.println("vector:"+vector[1]);
+        int[] num1={1,2,5,7,9,0};
+        char[] valc={'*','R','1','/','P'};
+        double[] vald={1.2,2.5,5.2,7.9,9.2,0.3};
+        boolean[] bool={false, true, false};
+        String[] cadena={"Juan","Pedro", "Raul", "Daniel"};
+        Object[] todo={'*',"Juan", 8, 3.5, false };
         
-        int[] vec=new int[3];
-        vec[0]=78;
-        vec[1]=8;
-        vec[2]=10;
-        System.out.println(vec[1]);
-        System.out.println("Suma contenido:"+(vec[0]+vec[1]+vec[2])); */       
+        int[] numX=new int[8];
+        numX[0]=87;
+        numX[1]=8;
+        numX[2]=7;
+        System.out.println("Dato:"+numX[0]);
+        
+        
+        
+        
     }
 }
