@@ -28,11 +28,22 @@ public class ArreglosJava {
             System.out.println(x[i]);
         }
     }    
+    
+    public int sumaVector(int[] num1){
+    int sum=0;    
+        for (int x = 0; x < num1.length; x++) {
+            sum=sum+num1[x];
+        }
+        return sum;
+    }
+    
     public static void main(String[] args) {
         ArreglosJava aj=new ArreglosJava();
-        aj.rellenarVector(5);
+        aj.rellenarVector(5); 
         
         int[] num1={1,2,5,7,9,0};
+        System.out.println("Resultado:"+aj.sumaVector(num1));
+        
         char[] valc={'*','R','1','/','P'};
         double[] vald={1.2,2.5,5.2,7.9,9.2,0.3};
         boolean[] bool={false, true, false};
