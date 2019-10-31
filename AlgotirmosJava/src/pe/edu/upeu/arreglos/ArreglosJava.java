@@ -36,13 +36,35 @@ public class ArreglosJava {
         }
         return sum;
     }
+    public int sumaVectorImpar(int[] num1){
+    int sum=0;    
+        for (int x = 0; x < num1.length; x++) {
+            if(num1[x]%2!=0){
+            sum=sum+num1[x];
+            }
+        }
+        return sum;
+    }
     
+    public void contarParImpar(int[] num1){
+    int contPar=0, contImpar=0;    
+        for (int x = 0; x < num1.length; x++) {
+            if(num1[x]%2==0){
+            contPar++;
+            }else{
+            contImpar++;
+            }
+        }
+        System.out.println("Numeros Impares :="+contImpar+"\nNumero Par:="+contPar);
+    }
+          
     public static void main(String[] args) {
         ArreglosJava aj=new ArreglosJava();
-        aj.rellenarVector(5); 
-        
+       // aj.rellenarVector(5);         
         int[] num1={1,2,5,7,9,0};
         System.out.println("Resultado:"+aj.sumaVector(num1));
+        System.out.println("Resultado IMP:"+aj.sumaVectorImpar(num1));
+        aj.contarParImpar(num1);
         
         char[] valc={'*','R','1','/','P'};
         double[] vald={1.2,2.5,5.2,7.9,9.2,0.3};
