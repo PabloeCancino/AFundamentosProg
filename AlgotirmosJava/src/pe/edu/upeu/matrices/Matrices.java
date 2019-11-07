@@ -36,8 +36,6 @@ public class Matrices {
         System.out.println("");
     }
     
-    
-    
     public static void main(String[] args) {       
         //imprimirMatriz(rellenarMatriz(2, 2));
         imprimirMatriz(suma2MatricesSimetricos(rellenarMatriz(2, 2), 
