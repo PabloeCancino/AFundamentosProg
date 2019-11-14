@@ -111,13 +111,70 @@ public class MatrizTransformadas {
         System.out.println("Ingrese el numero de Inicio:");
         int numInit=cs.nextInt();
         for(int j = 0; j <dim; j++){
-            for (int i = dim-1; i >=0; i--) {
-                M[j][i]=numInit;
+            for (int i = dim-1; i >=0+j; i--) {
+                System.out.println("M["+i+"]["+j+"]="+numInit);
+                M[i][j]=numInit;
                 numInit++;
             }        
         }
         return M;
         }
+    public static int[][] transformada16(){
+        System.out.println("Ingrese la Dimension de la Matriz:");
+        int dim=cs.nextInt();
+        int[][] M=new int[dim][dim];
+        System.out.println("Ingrese el numero de Inicio:");
+        int numInit=cs.nextInt();//dim=5 numInit=0
+        for(int j = 0; j <dim; j++){
+            for (int i = dim-1; i >=(dim-1)-j; i--) {
+                System.out.println("M["+i+"]["+j+"]="+numInit);
+                M[i][j]=numInit;
+                numInit++;
+            }        
+        }
+        return M;
+        }
+    public static int[][] transformada21(){
+        System.out.println("Ingrese la Dimension de la Matriz:");
+        int dim=cs.nextInt();
+        int[][] M=new int[dim][dim];
+        System.out.println("Ingrese el numero de Inicio:");
+        int numInit=cs.nextInt();//dim=5 numInit=0
+        for(int j = 0; j <dim; j++){
+            if(j%2==0){
+            for (int i = 0; i <dim; i++) {                
+                M[i][j]=numInit;
+                numInit++; }            
+            }else{
+            for (int i = dim-1; i >=0; i--) {                
+                M[i][j]=numInit;
+                numInit++;}            
+            }
+        }
+        return M;
+        }
+    
+    public static int[][] transformada24(){
+        System.out.println("Ingrese la Dimension de la Matriz:");
+        int dim=cs.nextInt();
+        int[][] M=new int[dim][dim];
+        System.out.println("Ingrese el numero de Inicio:");
+        int numInit=cs.nextInt();//dim=5 numInit=0
+        for(int j = dim-1; j>=0; j--){
+            if(j%2==0){
+            for (int i = dim-1; i >=0; i--) { //              
+                M[i][j]=numInit;
+                numInit++; }            
+            }else{
+            for (int i = 0; i <dim; i++) {                
+                M[i][j]=numInit;
+                numInit++;}            
+            }
+        }
+        return M;
+        }
+    
+
         
 
         
@@ -127,6 +184,6 @@ public class MatrizTransformadas {
         imprimirMatriz(transformada03());
         imprimirMatriz(transformada04());
         imprimirMatriz(transformada06());*/
-        imprimirMatriz(transformada15());
+        imprimirMatriz(transformada24());
     }
 }
