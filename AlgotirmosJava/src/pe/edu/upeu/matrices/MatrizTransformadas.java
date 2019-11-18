@@ -174,7 +174,64 @@ public class MatrizTransformadas {
         return M;
         }
     
-
+    public static int[][] transformCaracol30(){
+    System.out.println("Ingrese la Dimension de la Matriz:");
+    int dim=cs.nextInt();
+    int[][] M=new int[dim][dim];
+    System.out.println("Ingrese el numero de Inicio:");
+    int numInit=cs.nextInt();//dim=5 numInit=0
+        for(int c=0;c<dim/2;c++){
+            for (int ld = c; ld < dim-1-c; ld++) {
+              M[ld][dim-1-c]=numInit;
+              numInit++;
+            }
+            for (int li = dim-1-c; li >c; li--) {
+              M[dim-1-c][li]=numInit;
+              numInit++;
+            }
+            for (int liz = dim-1-c; liz >c; liz--) {
+              M[liz][c]=numInit;
+              numInit++;
+            }
+            for (int ls = c; ls <dim-1-c; ls++) {
+              M[c][ls]=numInit;
+              numInit++;
+            }            
+        }
+        if(dim%2!=0){
+            M[dim/2][dim/2]=numInit;
+        }        
+        return M;
+    }
+    public static int[][] transformCaracol34(){
+    System.out.println("Ingrese la Dimension de la Matriz:");
+    int dim=cs.nextInt();
+    int[][] M=new int[dim][dim];
+    System.out.println("Ingrese el numero de Inicio:");
+    int numInit=cs.nextInt();//dim=5 numInit=0
+        for(int c=0;c<dim/2;c++){
+            for (int ld = c; ld < dim-1-c; ld++) {
+              M[ld][dim-1-c]=numInit;
+              numInit++;
+            }
+            for (int li = dim-1-c; li >c; li--) {
+              M[dim-1-c][li]=numInit;
+              numInit++;
+            }
+            for (int liz = dim-1-c; liz >c; liz--) {
+              M[liz][c]=numInit;
+              numInit++;
+            }
+            for (int ls = c; ls <dim-1-c; ls++) {
+              M[c][ls]=numInit;
+              numInit++;
+            }            
+        }
+        if(dim%2!=0){
+            M[dim/2][dim/2]=numInit;
+        }        
+        return M;
+    }
         
 
         
@@ -184,6 +241,7 @@ public class MatrizTransformadas {
         imprimirMatriz(transformada03());
         imprimirMatriz(transformada04());
         imprimirMatriz(transformada06());*/
-        imprimirMatriz(transformada24());
+        //imprimirMatriz(transformada24());
+        imprimirMatriz(transformCaracol30());
     }
 }
